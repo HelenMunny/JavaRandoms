@@ -34,6 +34,8 @@ public class practice2 {
         System.out.println("======================================");
 
 //        QUESTION-5: PRINT NUMBERS FROM -10 TO -1 USING FOR LOOP
+
+        System.out.println("---------------------------");
 //        QUESTION-6: PRINT ALL ODD NUMBERS BETWEEN 1 TO 99
 //        QUESTION-7: PRINT FIBONACCI SERIES UP TO 10 TERMS
 //        QUESTION-8: CALCULATE THE SUM OF ALL NUMBERA FROM -5 TO 18
