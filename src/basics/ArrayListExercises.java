@@ -77,6 +77,11 @@ public class ArrayListExercises {
       nums.add(7);
       nums.add(20);
       nums.add(5);
+//      advanced/enhanced/for-each loop for iterating over list
+      for(int S:nums){
+       System.out.println(S);
+      }
+     System.out.println("=================================");
 //      before sorting
       System.out.println("Before sorting: "+nums);
       Collections.sort(nums);
@@ -88,6 +93,12 @@ public class ArrayListExercises {
       Object[] namesArr = names.toArray();
       System.out.println(namesArr[3]);
       System.out.println("=================================");
+
+//      ITERATING OVER ARRAYLIST BY FOR LOOP
+//     for (int i = 0; i < names.size(); i++) {
+//      System.out.print(names.get(i)+" ");
+//     }
+
 
     }
 }

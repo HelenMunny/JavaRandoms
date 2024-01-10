@@ -32,7 +32,7 @@ public class LoopExcercise {
 
 //        QUESTION-4: COUNT THE TOTAL NUMBER OF DIGITS IN 67687
         int number = 67687;
-        int length = String.valueOf(number).length();
+        int length = String.valueOf(number).length();   //converting a number to String, method is String.valueOf(number)
         System.out.println(length);
         System.out.println("======================================");
 
