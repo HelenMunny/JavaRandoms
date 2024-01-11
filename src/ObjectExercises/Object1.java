@@ -13,12 +13,12 @@ public class Object1 {
 
     }
 
-    int a = 5;
-     void method1(){
-         System.out.println("Hi, Im method 1");
+    public int a = 5;
+      void method1(){
+         System.out.println("Hi, Im method 1 inside Object1 class");
      }
 
-     void method2(){
+     public void method2(){
          System.out.println("Im method 2");
      }
 }

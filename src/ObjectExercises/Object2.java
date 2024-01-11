@@ -6,7 +6,7 @@ public class Object2 {
         Object1 obj = new Object1();
 
         System.out.println(obj2.b-obj.a);
-        obj2.m2();
+        obj.method1();
     }
 
     int b = 10;
