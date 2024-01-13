@@ -7,4 +7,5 @@ public class ParentSuper {
         System.out.println("My full name is "+fName+" "+lName);
     }
     public int age = 29;
+    public static int a = 5;
 }

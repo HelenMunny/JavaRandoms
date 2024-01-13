@@ -9,6 +9,9 @@ public class ChildSub extends ParentSuper{
         child.cm1("NC","USA");
         child.SuperThis();
         System.out.println(child.superP1-child.thisP1);
+
+//        even static members of parent class can be accessed through child class name
+        System.out.println(ChildSub.a);
     }
     public int p1 = 50;
     public void cm1(String state, String country){
