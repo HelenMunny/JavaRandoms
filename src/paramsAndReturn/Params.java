@@ -1,4 +1,4 @@
-package ParamsAndReturn;
+package paramsAndReturn;
 
 public class Params {
     public static void m1(String name, int age){

@@ -1,4 +1,4 @@
-package InheritanceExercise;
+package inheritanceExercise;
 
 public class ParentSuper {
 

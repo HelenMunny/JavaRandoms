@@ -1,4 +1,4 @@
-package ParamsAndReturn;
+package paramsAndReturn;
 
 public class ReturnKey {
     public String returnType(String code){
