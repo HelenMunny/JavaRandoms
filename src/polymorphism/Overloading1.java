@@ -7,9 +7,7 @@ public class Overloading1 {
         overloading.sub("Mahmuda","Helen");
         overloading.sub(40,60,10);
 //        here all the methods are sharing the same name sub, because the parameters are different in numbers, combinations, types and sequences.
-
     }
-
     public void sub(int a, int b){
         System.out.println(a+b);
     }

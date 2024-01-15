@@ -8,7 +8,6 @@ public class OverridingAbstract extends Abs {
         override.m1();
         override.abs();
         override.abs2();
-
     }
 
 
