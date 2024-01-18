@@ -12,8 +12,11 @@ public class StringExercises {
         System.out.println(str.toUpperCase());
         System.out.println(str.toLowerCase());
 
+        System.out.println("===================");
         String[] words = str.split(" ");      //spilts on the basis of input. stores the spilted elements in an array
         System.out.println(words.length);
+        System.out.println(words[1]);
+        System.out.println("==================");
 
         System.out.println(str.trim());    //cuts whitespaces from both ends
         System.out.println(str.substring(3,20));
