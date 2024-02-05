@@ -51,6 +51,18 @@ public class LoopExcercise {
         System.out.println("======================================");
 
 //        QUESTION-7: PRINT FIBONACCI SERIES UP TO 10 TERMS
+        int a = 0;
+        int b = 1;
+        System.out.println(a);
+        System.out.println(b);
+
+        for(int i=1; i<=8;i++){
+            int c = a+b;
+            System.out.println(c);
+            a = b;
+            b = c;
+        }
+        System.out.println("==========================================");
 //        QUESTION-8: CALCULATE THE SUM OF ALL NUMBERS FROM -5 TO 18
         int total = 0;
         for(int i=-5; i<=18; i++){
