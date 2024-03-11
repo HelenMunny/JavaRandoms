@@ -37,7 +37,7 @@ public class RandomCodes {
         System.out.println(newArr[1]);
 
         //        largest num
-        System.out.println(newArr[newArr.length-2]);
+        System.out.println(newArr[newArr.length-1]);
 
 //       second largest num
         System.out.println(newArr[newArr.length-2]);
@@ -103,7 +103,8 @@ public class RandomCodes {
                 System.out.print( i +" ");
             }
         }
-        System.out.println(""+"===========================");
+        System.out.println("");
+        System.out.println("===========================");
 
 //        PRINT FIRST 10 PRIME NUMBERS
         System.out.println("PRINT FIRST 10 PRIME NUMBERS:");
@@ -127,6 +128,130 @@ public class RandomCodes {
         }
         System.out.println(" ");
         System.out.println("===========================");
+
+//  STRING PALINDROME A. bob B. marry
+        System.out.println("STRING PALINDROME A. bob B. marry");
+        String bob = "bob";
+        String marry = "marry";
+        StringBuffer strBob = new StringBuffer(bob);
+        String reverseBob = strBob.reverse().toString();
+        boolean bobPalindrome = bob.equals(reverseBob);
+        System.out.println(bobPalindrome);
+        StringBuffer strMarry = new StringBuffer(marry);
+        String reverseMarry = strMarry.reverse().toString();
+        boolean marryPalindrome = marry.equals(reverseMarry);
+        System.out.println(marryPalindrome);
+        System.out.println("===============================");
+
+//        INTEGER PALINDROME A. 1001 B. 1231
+        System.out.println("INTEGER PALINDROME A. 1001 B. 1231");
+        int number = 123;
+        int reverse=0;
+        while(number>0){
+            reverse = number%10;
+            number = number/10;
+        }
+
+
+//        REVERSE A NUMBER
+        System.out.println("REVERSE A NUMBER:");
+        int n1 = 6589494;
+        String n1Value = String.valueOf(n1);
+        StringBuffer sb = new StringBuffer(n1Value);
+        String newN1 = sb.reverse().toString();
+        System.out.println(newN1);
+        System.out.println("===========================");
+
+
+//        REVERSE A STRING
+        System.out.println("REVERSE A STRING:");
+        String str1 = "analogy";
+        StringBuffer sbStr1 = new StringBuffer(str1);
+        String reverseStr1 = sbStr1.reverse().toString();
+        System.out.println(reverseStr1);
+        System.out.println("===========================");
+
+//        REMOVE DUPLICATES FROM AN ARRAY
+        System.out.println("REMOVE DUPLICATES FROM AN ARRAY:");
+        int[] arr1 = {19,9,2,3,9,8,2,7};
+        Set<Integer> s = new TreeSet<>();
+
+        for(int i=0; i< arr1.length;i++){
+            s.add(arr1[i]);
+        }
+        Object[] removeDuplicates = s.toArray();
+        System.out.println(removeDuplicates.length);    //length reduced from 8 to 6
+        System.out.println("=============================");
+
+
+//        STRING ANAGRAM MARY, ARMY
+        System.out.println("STRING ANAGRAM MARY, ARMY:");
+        boolean anagram = true;
+        String strA1 = "Mary";
+        String strA2 = "Amy";
+        strA1.toLowerCase();
+        strA2.toLowerCase();
+        if(strA1.length() != strA2.length()){
+            anagram = false;
+        } else{
+            char[] arrA1 = strA1.toCharArray();
+            Arrays.sort(arrA1);
+            char[] arrA2 = strA2.toCharArray();
+            Arrays.sort(arrA2);
+            if (arrA1.equals(arrA2)){
+                anagram = true;
+            }
+        }
+        System.out.println(anagram);
+        System.out.println("==================================");
+
+
+//        FACTORIAL 7
+        System.out.println("FACTORIAL 7");
+        int n = 7;
+        int fact=1;
+        for(int i=1; i<=n; i++){
+            fact *= i;
+        }
+        System.out.println(fact);
+        System.out.println("================================");
+
+
+//        COUNT NON DUPLICATES WORDS IN A STRING
+        System.out.println("COUNT NON DUPLICATES WORDS IN A STRING");
+        String words = " I am a student. I love to study. But I do not have any time to study as I am a full-time stay at home parent.";
+        String[] arrS = words.split(" ");
+        Set<String> setS = new TreeSet<>();
+        for(int i=0; i< arrS.length;i++){
+            setS.add(arrS[i]);
+        }
+        Object[] finalWords = setS.toArray();
+        System.out.println(arrS.length);
+        System.out.println(finalWords.length);   //length reduced from 27 to 21. so non-duplicates words for the String is 21
+        System.out.println("======================================");
+
+
+//        FIND THE LENGTH OF THE STRING WITHOUT THE LENGTH METHOD
+        System.out.println("FIND THE LENGTH OF THE STRING WITHOUT THE LENGTH METHOD:");
+        String str3 = "I am a newbie to learn java.";
+        char[] charArr = str3.toCharArray();
+        int count2=0;
+        for(int i=0; i<charArr.length; i++){
+            count2++;
+        }
+        System.out.println(count2);
+        System.out.println(str3.length());   // length is 28
+        System.out.println("====================================");
+
+
+
+
+
+
+
+
+
+
 
 
 
