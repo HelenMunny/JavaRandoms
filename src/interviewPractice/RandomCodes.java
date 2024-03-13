@@ -145,12 +145,18 @@ public class RandomCodes {
 
 //        INTEGER PALINDROME A. 1001 B. 1231
         System.out.println("INTEGER PALINDROME A. 1001 B. 1231");
-        int number = 123;
-        int reverse=0;
-        while(number>0){
-            reverse = number%10;
-            number = number/10;
+        int number = 1001;
+        String palindrome = String.valueOf(number);
+        StringBuffer sbp = new StringBuffer(palindrome);
+        String rv = sbp.reverse().toString();
+        int newP = Integer.valueOf(rv);
+        if(number==newP){
+            System.out.println(newP+" palindrome number");
+        }else{
+            System.out.println(number+" not a palindrome number");
         }
+        System.out.println("=====================");
+
 
 
 //        REVERSE A NUMBER
@@ -171,6 +177,7 @@ public class RandomCodes {
         System.out.println(reverseStr1);
         System.out.println("===========================");
 
+
 //        REMOVE DUPLICATES FROM AN ARRAY
         System.out.println("REMOVE DUPLICATES FROM AN ARRAY:");
         int[] arr1 = {19,9,2,3,9,8,2,7};
@@ -184,11 +191,12 @@ public class RandomCodes {
         System.out.println("=============================");
 
 
+
 //        STRING ANAGRAM MARY, ARMY
         System.out.println("STRING ANAGRAM MARY, ARMY:");
         boolean anagram = true;
         String strA1 = "Mary";
-        String strA2 = "Amy";
+        String strA2 = "Army";
         strA1.toLowerCase();
         strA2.toLowerCase();
         if(strA1.length() != strA2.length()){
@@ -243,6 +251,35 @@ public class RandomCodes {
         System.out.println(str3.length());   // length is 28
         System.out.println("====================================");
 
+
+
+//        ARMSTRONG NUMBER
+        System.out.println("ARMSTRONG NUMBER:");
+        int an = 153;
+        int temp1 = an;
+        int sum =0;
+
+        while(an>0){
+            sum = sum + (an%10)*(an%10)*(an%10);
+            an = an/10;
+        }
+        if(sum==temp1){
+            System.out.println(temp1+" is an armstrong number");
+        }else{
+            System.out.println(temp1+" is not an armstrong number");
+        }
+        System.out.println("===========================");
+
+//        COUNT THE EVEN AND ODD DIGITS IN A GIVEN NUMBER
+//        SUM OF DIGITS OF A GIVEN NUMBER
+//        FIND LARGEST OF 3 NUMBERS
+//        GENERATE RANDOM NUMBERS AND STRINGS
+//        EVEN AND ODD NUMBERS FROM AN ARRAY
+//        FIND MISSING NUMBER IN AN ARRAY
+//        FIND DUPLICATE ELEMENTS IN AN ARRAY
+//        REMOVE SPECIAL CHARECTER FROM A STRING
+//        FIND THE OCCURANCES OF A CHARECTER IN A STRING
+//        READ AND WRITE DATA INTO TEXT FILE
 
 
 
