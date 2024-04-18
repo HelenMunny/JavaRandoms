@@ -1,5 +1,7 @@
 package basics;
 
+import java.util.Arrays;
+
 public class ArrayExcercises {
     public static void main(String[] args) {
 //ARRAY EXERCISES.............................................................
@@ -58,6 +60,7 @@ public class ArrayExcercises {
 //        different methods of declaring array
 
       int[] array = {9,3,6,1,8,3};
+      Arrays.sort(array);
         System.out.println(array.length);
 
         int[] A = new int[5];

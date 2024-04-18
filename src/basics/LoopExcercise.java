@@ -63,6 +63,7 @@ public class LoopExcercise {
             b = c;
         }
         System.out.println("==========================================");
+
 //        QUESTION-8: CALCULATE THE SUM OF ALL NUMBERS FROM -5 TO 18
         int total = 0;
         for(int i=-5; i<=18; i++){

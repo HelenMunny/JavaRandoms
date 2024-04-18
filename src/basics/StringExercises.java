@@ -31,12 +31,6 @@ public class StringExercises {
         System.out.println(str.endsWith("e"));
         System.out.println(str.equals(str2));
         System.out.println(str.concat(". "+str2));
-
-
-
-
-
-
     }
 
 }
